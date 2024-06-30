@@ -11,8 +11,17 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
-def test_complex(driver, login_fixture):
-    
+def test_complex(driver, only_login_fixture):
+    """ The complex test cheks:
+    1. Login
+    2. Avaliable discount banner and carousel on the main page
+    3. Check the drop-down menu
+    4. Go to the Clothes > Man page and choise the item
+    5. Add item to the cart
+    6. Order the item (fullfill the fields of order form)
+    7. I used fixtures
+    """
+        
     # Check that banner and carousel are displayed: 
     main_logo_in_the_header = driver.find_element(By.XPATH, '//div[@id="_desktop_logo"]')
     main_logo_in_the_header.click()
