@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+@pytest.mark.run(order=5)
 def test_search_field_positive(driver, login_fixture, logout_fixture):
     """ 
     This test checks the search field fith positive data.
@@ -27,6 +28,7 @@ def test_search_field_positive(driver, login_fixture, logout_fixture):
     button_search_submit.click()
     wait_for_element('//*[contains(text(), "sweater")]')
      
+@pytest.mark.run(order=6)
 def test_search_field_negative(driver, login_fixture, logout_fixture):
     """ 
     This test checks the search field fith NEGATIVE data.

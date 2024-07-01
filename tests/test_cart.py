@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+@pytest.mark.run(order=10)
 def test_cart(driver, login_fixture, logout_fixture):
     """ 
     This test check works with Cart.

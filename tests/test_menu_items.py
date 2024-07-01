@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+@pytest.mark.run(order=7)
 def test_clothes_and_submenus(driver, login_fixture, logout_fixture):
     """ 
     This test checks drop-down main menu.

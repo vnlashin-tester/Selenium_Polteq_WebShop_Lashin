@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+@pytest.mark.run(order=3)
 def test_check_one_of_item_check_box(driver, login_fixture, logout_fixture):
     """ 
     This test checks the filter. Choise only one item.
@@ -26,6 +27,7 @@ def test_check_one_of_item_check_box(driver, login_fixture, logout_fixture):
    
 
 
+@pytest.mark.run(order=4)
 def test_check_two_of_items_check_box(driver, login_fixture, logout_fixture):
     """ 
     This test checks the filter. Choise TWO items.

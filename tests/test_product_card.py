@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+@pytest.mark.run(order=7)
 def test_product_card_short_way(driver, login_fixture, logout_fixture):
     """ 
     This test checks the product card. Quick way (pop-up "quick view").
@@ -41,6 +42,7 @@ def test_product_card_short_way(driver, login_fixture, logout_fixture):
     close_short_card_page.click()
     
      
+@pytest.mark.run(order=9)
 def test_product_card_normal_way(driver, login_fixture, logout_fixture):
     """ 
     This test checks the product card. Normal way (click at item).
