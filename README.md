@@ -41,6 +41,10 @@ Below, I am attaching photos and examples of performing autotests.
 
 - **Login and Logout Fixtures**: `login_fixture` and `logout_fixture` are used to handle user authentication setup and teardown, providing a clean state for each test.
 
+## Continuous Integration (CI)
+
+I have implemented Continuous Integration (CI) using GitHub Actions. This ensures that our tests are automatically run on every push or pull request to the `main` branch, helping us maintain code quality and catch issues early.
+
 ## Detailed Test Descriptions
 
 ### test_product_card_short_way
