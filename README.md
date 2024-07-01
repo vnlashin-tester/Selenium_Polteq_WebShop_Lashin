@@ -45,6 +45,8 @@ Below, I am attaching photos and examples of performing autotests.
 
 I have implemented Continuous Integration (CI) using GitHub Actions. This ensures that our tests are automatically run on every push or pull request to the `main` branch, helping us maintain code quality and catch issues early.
 
+[photo_github_actions](https://drive.google.com/file/d/17g_aE7-ORcpqNbzI8XSFPGCnUp9K5ji3/view?usp=sharing)
+
 ## Detailed Test Descriptions
 
 ### test_product_card_short_way
@@ -79,13 +81,24 @@ This test verifies the product card functionality by clicking directly on the pr
 3. **Run Tests**:
    pytest
 ---
-## Project Artefacts
+## Project Artifacts
 Artefacts can be found on Google Drive.
 
 - <a href="https://docs.google.com/document/d/1mu7r23lQwvueH1c_ltrmVmpEzFx3lkqlwZ1kSe0A0x4/edit?usp=sharing" target="_blank">Test Plan</a>
 - <a href="https://docs.google.com/spreadsheets/d/1f4Q8VN6Gufj0R72tmPBWx7tXoL7sAcTbXJKIx3ZEtRk/edit?usp=sharing" target="_blank">User Stories</a>
 - <a href="https://docs.google.com/spreadsheets/d/1bLJAJp9h3iQc03_BMJ5PXBq2RVoE54kseyUYoxY_feQ/edit?usp=sharing" target="_blank">Checklists and Trace Matrix</a>
 - <a href="https://vnlashin-tester.github.io/Mind_Map/markmap.html" target="_blank">Mind_Map</a> 
+---
+## Test Reports
+
+I generated detailed test reports using `pytest-html` and `Allure`.
+
+### [pytest-html](https://drive.google.com/file/d/1BhHSUf5RCV2NeKoZVlgSVAp0XJeE2rlQ/view?usp=sharing)
+
+To generate and view the HTML report locally, run:
+
+```sh
+pytest --html=report.html --self-contained-html
 
 ---
 ## Project Foto
