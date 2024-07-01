@@ -1,11 +1,13 @@
 # Selenium Polteq WebShop Automation
 
 ## Overview
-
 This project contains automated tests for the Polteq WebShop, utilizing Selenium WebDriver for browser automation. The main goal is to verify the functionality of the product card feature, ensuring consistency between item previews and their detailed views.
-The Polteq web shop is a special website written for company employees and is used exclusively for training testing skills and writing automated tests.
-Also, for privacy purposes, the real login/password has been removed from the code, so it will not be possible to run automatic tests.
-Below I am attaching photos and examples of performing autotests.
+
+The Polteq web shop is a special website written for company employees and is used exclusively for training testing skills and writing automated tests. 
+
+For privacy purposes, the real login/password has been removed from the code, so it will not be possible to run automatic tests.
+
+Below, I am attaching photos and examples of performing autotests.
 ---
 ## Project Structure
 
