@@ -14,25 +14,47 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
 chromedriver_autoinstaller.install()  # To automatically install the correct version of chromedriver
+# -------
+def pytest_addoption(parser):
+    parser.addoption("--headless", action="store_true", help="Run browser in headless mode")
 
 @pytest.fixture
-def driver():
-    # Driver srttings
+def driver(pytestconfig):
+    headless = pytestconfig.getoption("--headless")
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size=1920x1080")
+    if headless:
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--window-size=1920x1080")
     service = Service()
     driver = webdriver.Chrome(service=service, options=chrome_options)
-    
-    # driver = webdriver.Chrome()
     driver.get("https://testshop.polteq-testing.com")
     driver.maximize_window()
     driver.implicitly_wait(5)
     yield driver  
     driver.quit()
+
+# -----
+# @pytest.fixture
+# def driver():
+#     # Driver srttings
+#     chrome_options = Options()
+#     chrome_options.add_argument("--headless")
+#     chrome_options.add_argument("--no-sandbox")
+#     chrome_options.add_argument("--disable-dev-shm-usage")
+#     chrome_options.add_argument("--disable-gpu")
+#     chrome_options.add_argument("--window-size=1920x1080")
+#     service = Service()
+#     driver = webdriver.Chrome(service=service, options=chrome_options)
+    
+#     # driver = webdriver.Chrome()
+#     driver.get("https://testshop.polteq-testing.com")
+#     driver.maximize_window()
+#     driver.implicitly_wait(5)
+#     yield driver  
+#     driver.quit()
 
 @pytest.fixture
 def only_login_fixture(driver): 
