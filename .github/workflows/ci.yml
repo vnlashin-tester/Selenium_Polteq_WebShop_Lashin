@@ -40,18 +40,3 @@ jobs:
       with:
         name: test-report
         path: report.html
-
-    - name: Run tests and generate Allure report
-      run: |
-        source venv/bin/activate
-        pytest --headless --alluredir=allure-results
-
-    - name: Generate Allure report
-      run: |
-        allure generate allure-results --clean -o allure-report
-
-    - name: Upload Allure report
-      uses: actions/upload-artifact@v2
-      with:
-        name: allure-report
-        path: allure-report
