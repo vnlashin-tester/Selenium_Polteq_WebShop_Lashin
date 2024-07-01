@@ -22,10 +22,6 @@ Artefacts can be found on Google Drive.
 - <a href="https://vnlashin-tester.github.io/Mind_Map/markmap.html" target="_blank">Mind_Map</a> 
 
 
-## Test Report from Selenium
-
-![Test Report](https://drive.google.com/file/d/16NlwY4c6LlZIT03l575fhe9UNs3B_iCp/view?usp=sharing)
-
 ## Project Foto
 - You can view the project photo [here](https://drive.google.com/file/d/16NlwY4c6LlZIT03l575fhe9UNs3B_iCp/view?usp=sharing).
 - You can view the CI (GitHub Actions) photo [here](#).
