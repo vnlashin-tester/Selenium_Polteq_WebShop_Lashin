@@ -2,6 +2,7 @@
 import time
 import pytest
 import pytest_html
+import chromedriver_autoinstaller
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.service import Service
@@ -11,6 +12,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+chromedriver_autoinstaller.install()  # To automatically install the correct version of chromedriver
 
 @pytest.fixture
 def driver():
