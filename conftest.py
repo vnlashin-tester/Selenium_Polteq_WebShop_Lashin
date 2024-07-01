@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
+
 chromedriver_autoinstaller.install()  # To automatically install the correct version of chromedriver
 
 def pytest_addoption(parser):
