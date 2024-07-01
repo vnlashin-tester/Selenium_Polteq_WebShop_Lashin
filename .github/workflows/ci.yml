@@ -30,7 +30,13 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
 
-    - name: Run tests
+    - name: Run tests and generate report
       run: |
         source venv/bin/activate
-        pytest --headless
+        pytest --headless --html=report.html --self-contained-html
+
+    - name: Upload report
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-report
+        path: report.html
