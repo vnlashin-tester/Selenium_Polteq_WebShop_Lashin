@@ -1,5 +1,3 @@
-# Attention! This section is in the process of being designed and filled!
-
 # Automating Online Store Website (Polteq-Webshop) with Selenium + PyTest
 
 
@@ -29,10 +27,10 @@ Artefacts can be found on Google Drive.
 ![Test Report](#)
 
 ## Project Foto
-- You can view the project photo [here](#).
+- You can view the project photo [here](https://drive.google.com/file/d/16NlwY4c6LlZIT03l575fhe9UNs3B_iCp/view?usp=sharing).
 - You can view the CI (GitHub Actions) photo [here](#).
 
 ## Project Video
 
-You can watch the project video [here](#).
+You can watch the project video [here](https://drive.google.com/file/d/1WYFYeKUsBqskbnGyemiqKeKtWVNvv30N/view?usp=sharing).
 
