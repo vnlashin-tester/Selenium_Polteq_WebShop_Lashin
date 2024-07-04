@@ -47,40 +47,8 @@ I have implemented Continuous Integration (CI) using GitHub Actions. This ensure
 
 [photo_github_actions](https://drive.google.com/file/d/17g_aE7-ORcpqNbzI8XSFPGCnUp9K5ji3/view?usp=sharing)
 
-## Detailed Test Descriptions
-
-### test_product_card_short_way
-
-This test verifies the product card functionality via the quick view pop-up.
-
-1. **Navigate to Home Page**: Click on the logo to return to the home page.
-2. **Mouse Over Product**: Hover over the first popular product to trigger the quick view option.
-3. **Capture Preview Text**: Save the product name from the preview.
-4. **Open Quick View**: Click the quick view link to open the product card.
-5. **Compare Texts**: Compare the product name from the preview with the name in the product card.
-6. **Close Product Card**: Close the product card to return to the previous state.
-
-### test_product_card_normal_way
-
-This test verifies the product card functionality by clicking directly on the product.
-
-1. **Navigate to Home Page**: Click on the logo to return to the home page.
-2. **Capture Preview Text**: Save the product name of the third popular product.
-3. **Open Product Card**: Click the product to open its detailed view.
-4. **Compare Texts**: Compare the first 21 characters of the product name from the preview with the name in the product card.
-5. **Close Product Card**: Ensure the product card can be closed or navigated away from if needed.
 ---
-## How to Run Tests
 
-1. **Clone the Repository**:
-   ```sh
-   git clone <repository_url>
-   cd Selenium_Polteq_WebShop_Lashin
-2. **Install Dependencies**:
-  pip install -r requirements.txt
-3. **Run Tests**:
-   pytest
----
 ## Project Artifacts
 Artefacts can be found on Google Drive.
 
@@ -95,15 +63,10 @@ I generated detailed test reports using `pytest-html` and `Allure`.
 
 ### [pytest-html](https://drive.google.com/file/d/1BhHSUf5RCV2NeKoZVlgSVAp0XJeE2rlQ/view?usp=sharing)
 
-To generate and view the HTML report locally, run:
-
-```sh
-pytest --html=report.html --self-contained-html
-
 ---
 ## Project Foto
 - You can view the project photo [here](https://drive.google.com/file/d/16NlwY4c6LlZIT03l575fhe9UNs3B_iCp/view?usp=sharing).
-- You can view the CI (GitHub Actions) photo [here](#).
+- You can view the CI (GitHub Actions) photo [here](https://drive.google.com/file/d/17g_aE7-ORcpqNbzI8XSFPGCnUp9K5ji3/view?usp=sharing).
 ---
 ## Project Video
 
